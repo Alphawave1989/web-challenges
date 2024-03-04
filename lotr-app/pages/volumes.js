@@ -15,7 +15,7 @@ export default function HomePage() {
           </Link>
         </li>
         <li>
-          <Link href={"./volumes/the-two-towers"}>The Two Towers2</Link>
+          <Link href={"./volumes/the-two-towers"}>The Two Towers</Link>
         </li>
         <li>
           <Link href={"./volumes/the-return-of-the-king"}>
