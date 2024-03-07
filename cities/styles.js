@@ -11,7 +11,7 @@ export default createGlobalStyle`
     margin: 0;
     font-family: system-ui;
     padding: 0; 
-    /* background-color: black;
-    color: white;  */
+    background-color: #104356;
+    color: white; 
   }
 `;
