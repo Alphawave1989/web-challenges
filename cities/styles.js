@@ -10,5 +10,8 @@ export default createGlobalStyle`
   body {
     margin: 0;
     font-family: system-ui;
+    padding: 0; 
+    /* background-color: black;
+    color: white;  */
   }
 `;
