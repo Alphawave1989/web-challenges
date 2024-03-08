@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import { cities } from "@/lib/data";
 import Link from "next/link";
 import styled from "styled-components";
+// import GlobalStyle from "../../styles";
 
 const Body = styled.div`
   background-color: black;
@@ -14,6 +15,10 @@ const Body = styled.div`
 
 const H1 = styled.h1`
   margin-top: 0;
+`;
+
+const P = styled.p`
+  color: red;
 `;
 
 export default function City() {
@@ -37,9 +42,11 @@ export default function City() {
         {city.population}
         {" People"}
       </p>
-      <p>
-        <Link href="/cities">Go to cities</Link>
-      </p>
+      <P>
+        <Link ClassName="Link-style" href="/cities">
+          Go to cities
+        </Link>
+      </P>
     </Body>
   );
 }

@@ -13,5 +13,7 @@ export default createGlobalStyle`
     padding: 0; 
     background-color: #104356;
     color: white; 
+    display: flex;
+    align-items: center;
   }
 `;
