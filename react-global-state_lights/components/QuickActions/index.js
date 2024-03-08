@@ -25,7 +25,7 @@ export default function QuickActions({
       <Button
         type="button"
         onClick={handleToggleAllOn}
-        disabled={countOfTurnedOnLights === lights.length}
+        disabled={lights && countOfTurnedOnLights === lights.length}
       >
         Turn all lights on
       </Button>
