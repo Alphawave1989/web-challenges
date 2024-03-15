@@ -11,21 +11,16 @@ export default function ProductForm() {
     const formData = new FormData(event.target);
     const productData = Object.fromEntries(formData);
 
-    try {
-      const response = await fetch("/api/products", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(productData),
-      });
-      if (response.ok) {
-        mutate();
-      } else {
-        throw new Error(`Error: ${response.status}`);
-      }
-    } catch (error) {
-      console.log("error");
-    } finally {
+    const response = await fetch("/api/products", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(productData),
+    });
+    if (response.ok) {
+      mutate();
       event.target.reset();
+    } else {
+      console.log("Error:", error);
     }
   }
 
