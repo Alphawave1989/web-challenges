@@ -18,7 +18,7 @@ export default createGlobalStyle`
 
   body {
     background-color: #303030;
-    color:blue;
+    color:black;
     display: grid;
     margin: auto;
     font-family: system-ui;
