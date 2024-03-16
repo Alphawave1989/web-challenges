@@ -13,6 +13,7 @@ export default async function handler(request, response) {
     try {
       // const product = new Product(request.body);
       // await product.save();
+      // small change
       await Product.create(request.body);
       return response.status(201).json({ status: "Product created." });
     } catch (error) {
